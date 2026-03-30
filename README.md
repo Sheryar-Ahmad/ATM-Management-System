@@ -22,8 +22,11 @@ Once you're logged in, you get access to all the main ATM functions:
 I used a three-tier architecture for this project:
 
 **Frontend:** Java Swing - all the screens you see (login, signup forms, the main ATM interface)
+
 **Backend Logic:**  JDBC with stored procedures - this handles all the database operations
+
 **Database:** MySQL - stores all user data, account details, and transaction records
+
 **The database has four main tables:**
 
 **1. customer** - personal info like name, DOB, address
