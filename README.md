@@ -70,23 +70,36 @@ That's pretty much it. The app should start up with the splash screen.
 **Project Files**
 Here's what each file does:
 
-File	What It Does
+**File	What It Does**
 main_Class.java	Where the program starts
+
 Login.java	Login screen
+
 Signup.java, Signup2.java, Signup3.java	Three-step registration form
+
 Deposit.java	Handles deposits
+
 Withdrawal.java	Handles withdrawals
+
 FastCash.java	Fast cash options
+
 BalanceEnquiry.java	Shows balance
+
 mini.java	Mini statement
+
 Pin.java	PIN management
+
 dbConnection.java	Database connection
+
 Bank Database.sql	Complete database with schema, stored procs, and triggers
 
 **Things I Want to Add Later**
 1.Fund transfer between accounts
+
 2.Bill payments
+
 3.Email or SMS after transactions
+
 4.Maybe a mobile version
 
 **License**
