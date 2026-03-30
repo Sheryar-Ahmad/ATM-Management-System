@@ -1,15 +1,21 @@
 **ATM Management System**
+
 This is a complete ATM Management System I built using Java Swing and MySQL. It basically simulates how a real ATM works - you can create an account, log in, deposit or withdraw money, check your balance, and even get a mini statement of recent transactions.
 
 **What It Does**
+
 When you open the application, you get a splash screen and then you can either log in with your card number and PIN or sign up for a new account. The signup process is pretty detailed - it asks for personal info like name, date of birth, address, and then additional details like CNIC, income, education, and occupation.
 
 Once you're logged in, you get access to all the main ATM functions:
 
 **Deposit** - Add cash to your account
+
 **Withdraw** - Take cash out (with balance check so you can't overdraw)
+
 **Fast Cash** - Quick withdrawal with preset amounts (500, 1000, etc.)
+
 **Balance Enquiry** - Shows your current balance
+
 **Mini Statement** - Shows your last few transactions
 
 **How It's Built**
