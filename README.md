@@ -41,27 +41,23 @@ I used a three-tier architecture for this project:
 **Security Stuff**
 I made sure to include proper security features because it's a banking app:
 1.PINs are encrypted in the database (no plain text passwords)
-
 2.Used PreparedStatement to prevent SQL injection
-
 3.Created stored procedures for login, deposit, and withdrawal
-
 4.Added a trigger that blocks any transaction that would make balance go negative
-
 5.Used database views to restrict direct access to tables
-
 6.The trigger is actually a nice touch - even if the Java code has a bug, the database itself will prevent overdrafts.
 
 **Technologies Used**
 1.Java (Swing for UI)
+
 2.MySQL for database
+
 3.JDBC for connecting Java with MySQL
+
 4.Stored Procedures and Triggers for database-level logic
 
 **How to Run This**
-
 **If you want to try it out on your machine:**
-
 First, set up the database. Run the Bank Database.sql file in MySQL to create all the tables, stored procedures, and triggers.
 Open dbConnection.java and change the database password to your own MySQL password.
 Make sure you have the MySQL Connector/J jar file added to your project classpath.
