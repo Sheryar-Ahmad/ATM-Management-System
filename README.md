@@ -19,35 +19,49 @@ Once you're logged in, you get access to all the main ATM functions:
 **Mini Statement** - Shows your last few transactions
 
 **How It's Built**
+
 I used a three-tier architecture for this project:
+
 **Frontend:** Java Swing - all the screens you see (login, signup forms, the main ATM interface)
-**Backend Logic:** JDBC with stored procedures - this handles all the database operations
+
+**Backend Logic:**  JDBC with stored procedures - this handles all the database operations
+
 **Database:** MySQL - stores all user data, account details, and transaction records
 
 **The database has four main tables:**
 
 **customer** - personal info like name, DOB, address
+
 **customer_details** - extra stuff like CNIC, income, occupation
+
 **account** - card numbers, encrypted PINs, balances
+
 **transactions** - record of every deposit and withdrawal
 
 **Security Stuff**
 I made sure to include proper security features because it's a banking app:
-PINs are encrypted in the database (no plain text passwords)
-Used PreparedStatement to prevent SQL injection
-Created stored procedures for login, deposit, and withdrawal
-Added a trigger that blocks any transaction that would make balance go negative
-Used database views to restrict direct access to tables
-The trigger is actually a nice touch - even if the Java code has a bug, the database itself will prevent overdrafts.
+1.PINs are encrypted in the database (no plain text passwords)
 
-Technologies Used
+2.Used PreparedStatement to prevent SQL injection
+
+3.Created stored procedures for login, deposit, and withdrawal
+
+4.Added a trigger that blocks any transaction that would make balance go negative
+
+5.Used database views to restrict direct access to tables
+
+6.The trigger is actually a nice touch - even if the Java code has a bug, the database itself will prevent overdrafts.
+
+**Technologies Used**
 1.Java (Swing for UI)
 2.MySQL for database
 3.JDBC for connecting Java with MySQL
 4.Stored Procedures and Triggers for database-level logic
 
 **How to Run This**
+
 **If you want to try it out on your machine:**
+
 First, set up the database. Run the Bank Database.sql file in MySQL to create all the tables, stored procedures, and triggers.
 Open dbConnection.java and change the database password to your own MySQL password.
 Make sure you have the MySQL Connector/J jar file added to your project classpath.
