@@ -19,24 +19,17 @@ Once you're logged in, you get access to all the main ATM functions:
 **5.Mini Statement** - Shows your last few transactions
 
 **How It's Built**
-
 I used a three-tier architecture for this project:
 
 **Frontend:** Java Swing - all the screens you see (login, signup forms, the main ATM interface)
-
 **Backend Logic:**  JDBC with stored procedures - this handles all the database operations
-
 **Database:** MySQL - stores all user data, account details, and transaction records
-
 **The database has four main tables:**
 
-**customer** - personal info like name, DOB, address
-
-**customer_details** - extra stuff like CNIC, income, occupation
-
-**account** - card numbers, encrypted PINs, balances
-
-**transactions** - record of every deposit and withdrawal
+**1. customer** - personal info like name, DOB, address
+**2. customer_details** - extra stuff like CNIC, income, occupation
+**3. account** - card numbers, encrypted PINs, balances
+**4. transactions** - record of every deposit and withdrawal
 
 **Security Stuff**
 I made sure to include proper security features because it's a banking app:
