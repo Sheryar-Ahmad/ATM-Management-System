@@ -8,15 +8,15 @@ When you open the application, you get a splash screen and then you can either l
 
 Once you're logged in, you get access to all the main ATM functions:
 
-**Deposit** - Add cash to your account
+**1.Deposit** - Add cash to your account
 
-**Withdraw** - Take cash out (with balance check so you can't overdraw)
+**2.Withdraw** - Take cash out (with balance check so you can't overdraw)
 
-**Fast Cash** - Quick withdrawal with preset amounts (500, 1000, etc.)
+**3.Fast Cash** - Quick withdrawal with preset amounts (500, 1000, etc.)
 
-**Balance Enquiry** - Shows your current balance
+**4.Balance Enquiry** - Shows your current balance
 
-**Mini Statement** - Shows your last few transactions
+**5.Mini Statement** - Shows your last few transactions
 
 **How It's Built**
 
