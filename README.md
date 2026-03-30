@@ -36,11 +36,17 @@ I used a three-tier architecture for this project:
 
 **Security Stuff**
 I made sure to include proper security features because it's a banking app:
+
 1.PINs are encrypted in the database (no plain text passwords)
+
 2.Used PreparedStatement to prevent SQL injection
+
 3.Created stored procedures for login, deposit, and withdrawal
+
 4.Added a trigger that blocks any transaction that would make balance go negative
+
 5.Used database views to restrict direct access to tables
+
 6.The trigger is actually a nice touch - even if the Java code has a bug, the database itself will prevent overdrafts.
 
 **Technologies Used**
