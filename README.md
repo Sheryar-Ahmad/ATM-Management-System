@@ -30,11 +30,15 @@ I used a three-tier architecture for this project:
 **The database has four main tables:**
 
 **1. customer** - personal info like name, DOB, address
+
 **2. customer_details** - extra stuff like CNIC, income, occupation
+
 **3. account** - card numbers, encrypted PINs, balances
+
 **4. transactions** - record of every deposit and withdrawal
 
 **Security Stuff**
+
 I made sure to include proper security features because it's a banking app:
 
 1.PINs are encrypted in the database (no plain text passwords)
@@ -62,6 +66,7 @@ I made sure to include proper security features because it's a banking app:
 **How to Run This**
 
 **If you want to try it out on your machine:**
+
 First, set up the database. Run the Bank Database.sql file in MySQL to create all the tables, stored procedures, and triggers.
 Open dbConnection.java and change the database password to your own MySQL password.
 Make sure you have the MySQL Connector/J jar file added to your project classpath.
@@ -70,9 +75,11 @@ Compile all the Java files and run main_Class.java.
 That's pretty much it. The app should start up with the splash screen.
 
 **Project Files**
+
 Here's what each file does:
 
 **File	What It Does**
+
 main_Class.java	Where the program starts
 
 Login.java	Login screen
@@ -106,4 +113,5 @@ Bank Database.sql	Complete database with schema, stored procs, and triggers
 4.Maybe a mobile version
 
 **License**
+
 This project is under the MIT license. Feel free to use it for learning or building upon it.
