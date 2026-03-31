@@ -50,6 +50,7 @@ I made sure to include proper security features because it's a banking app:
 6.The trigger is actually a nice touch - even if the Java code has a bug, the database itself will prevent overdrafts.
 
 **Technologies Used**
+
 1.Java (Swing for UI)
 
 2.MySQL for database
@@ -59,6 +60,7 @@ I made sure to include proper security features because it's a banking app:
 4.Stored Procedures and Triggers for database-level logic
 
 **How to Run This**
+
 **If you want to try it out on your machine:**
 First, set up the database. Run the Bank Database.sql file in MySQL to create all the tables, stored procedures, and triggers.
 Open dbConnection.java and change the database password to your own MySQL password.
